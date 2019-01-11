@@ -25,7 +25,7 @@ var allguns = [
 	'Vepr-209',
 	'AKS-74U',
 	'PP-19',
-	'Saigs-9',
+	'Saiga-9',
 	'Kedr',
 	'Klin',
 	'MR-133',
@@ -68,12 +68,12 @@ var eastarsmol = [
 ]
 
 var eastarsmolmags = [
-	'10 - Polymer',
-	'30 - Orange Bakelite',
-	'30 - P-Mag',
-	'30 - AK-12',
-	'45 - Polymer',
-	'60 - Polymer',
+	'10 Round Polymer',
+	'30 Round Orange Bakelite',
+	'30 Round P-Mag',
+	'30 Round AK-12',
+	'45 Round Polymer',
+	'60 Round Polymer',
 ]
 
 var aroptic = [
@@ -84,7 +84,7 @@ var aroptic = [
 	'Romeo',
 	'T-1',
 	'Holosun',
-	'Burriss FastFire',
+	'Burris FastFire',
 	'Valday Holo',
 	'Eotech Holo',
 	'Eotech HHS-1',
@@ -111,12 +111,12 @@ var eastarfat = [
 ]
 
 var eastarfatmags = [
-	'10 - Steel',
-	'30 - Steel',
-	'30 - Palm',
-	'30 - P-Mag',
-	'40 - Orange Bakelite',
-	'40 - Steel',
+	'10 Round Steel',
+	'30 Round Steel',
+	'30 Round Palm',
+	'30 Round P-Mag',
+	'40 Round Orange Bakelite',
+	'40 Round Steel',
 ]
 
 var silence = [
@@ -133,29 +133,29 @@ var eastsmg = [
 ]
 
 var aksmags = [
-	'10 - Polymer',
-	'30 - Orange Bakelite',
-	'30 - P-Mag',
-	'30 - AK-12',
-	'45 - Polymer',
-	'60 - Polymer',
+	'10 Round Polymer',
+	'30 Round Orange Bakelite',
+	'30 Round P-Mag',
+	'30 Round AK-12',
+	'45 Round Polymer',
+	'60 Round Polymer',
 ]
 
 var ppsaigsmags = [
-	'10 Rounder Mags',
-	'20 Rounder Mags',
-	'30 Rounder Yellow Mags',
-	'30 Rounder Black Mags',
+	'10 Round Mags',
+	'20 Round Mags',
+	'30 Round Yellow Mags',
+	'30 Round Black Mags',
 ]
 
 var kedklinmags = [
-	'20 Rounder Mags',
-	'30 Rounder Mags',
+	'20 Round Mags',
+	'30 Round Mags',
 ]
 
 var kedklinoptic = [
 	'PK-06',
-	'Irons',
+	'Ironsights',
 ]
 
 var smgoptic = [
@@ -166,7 +166,7 @@ var smgoptic = [
 	'Romeo',
 	'T-1',
 	'Holosun',
-	'Burriss FastFire',
+	'Burris FastFire',
 	'Valday Holo',
 	'Eotech Holo',
 	'Eotech HHS-1',
@@ -209,7 +209,7 @@ var slugoptic = [
 	'Romeo',
 	'T-1',
 	'Holosun',
-	'Burriss FastFire',
+	'Burris FastFire',
 	'Valday Holo',
 	'Eotech Holo',
 	'Eotech HHS-1',
@@ -229,7 +229,7 @@ var buckshotoptic = [
 	'Romeo',
 	'T-1',
 	'Holosun',
-	'Burriss FastFire',
+	'Burris FastFire',
 	'Valday Holo',
 	'Eotech Holo',
 	'Eotech HHS-1',
@@ -268,12 +268,12 @@ var westar = [
 ]
 
 var westarmags = [
-	'10 P-Mag',
-	'20 P-Mag',
-	'30 STANAG',
-	'30 HK Steel',
-	'30 P-Mag',
-	'40 P-Mag',
+	'10 Round P-Mag',
+	'20 Round P-Mag',
+	'30 Round STANAG',
+	'30 Round HK Steel',
+	'30 Round P-Mag',
+	'40 Round P-Mag',
 ]
 
 var westsmg = [
@@ -328,7 +328,7 @@ var magnification = [
 ]
 
 var onexoptics = [
-	'Iron',
+	'Ironsights',
 	'Red Dot',
 	'Red Dot',
 	'Holo Sights',
@@ -381,6 +381,7 @@ var glockmags = [
 
 var raid = [
 	'Woods',
+	'Factory',
 	'Customs',
 	'Shoreline',
 	'Interchange',
@@ -395,9 +396,14 @@ var raidquests = [
 	'Extract with a bag of ammo. For Labs, Woods and Customs you must fill a 3x3 area with full stacks. For Shoreline and Interchange you must fill a 4x4 area with full stacks.',
 	'Extract with 6 new and different guns.',
 	'Extract with 4 meals. 1 meal = 1 food + 1 drink.',
+	'You are the trashman. Collect 16 slots of useless trash. Empty ammo boxes, screw nuts, med kits with below 50 durability, wood stocks, wood hanguards, crackers, crutons, cigarettes, etc. Valuable items such as statues, MREs, juice, coffee, gold chains, clocks, clothing, guns, etc. do not count as trash.',
+	'You are mad as a hatter and you are not going to take it anymore. Collect 8 pieces of headware and then extract.',
+	'Collect 4 of a single model of gun. Eg. 4 AK-74Us, 4 Makarovs, 4 AKMs, 4 MP-153s, etc.',
 ]
 
 var customquest = [
+	'Interchange:   THE MOLE PEOPLE SHALL RISE AGAIN!!?! Make 2 complete laps around the mall basement. Kill every player, Scav, etc. that you find and then extract after you complete the second lap.',
+	'Labs:   It is time for your presentation, but you spent your weekends kissing boys and smoking dat heron. Steal 2 presentations (intel folders) from your colleagues and go to the presentation room. Once inside, shoot off an entire mag and then try to extract.',
 	'Woods:   It gets lonely in Tarkov. Your mission is to find a twink or BEAR to spend your glory days with. Find a life partner (hatchling, player scav, statue or Vaseline) and find 2 meals (1 food and 1 drink each). Bring them to the Scav House where you will have dinner together. You will then consummate your love to completet the quest (open to interpretation).',
 	'Shoreline:   Astronomy and anime is all you have left after Tarkov fell. Visit East 206 and West 303 to acquire the gyroscope and projector respectively. You will then visit the unlocked luxury house to get your body pillow, the locked luxury house to get the neighbours telescope and the general store in town to get some DVDs. Take everything back to the top of the observatory tower to enjoy and evening of hentai with senpai ending with a night watching the stars. Doing so completes the quest.',
 	'Customs:   It is your turn with the slag in 206. Find a 206 key in raid and swing by a gas station to pick up some beers. Then go to dorm room 206 to complete the quest.',
