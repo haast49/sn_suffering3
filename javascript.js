@@ -9,6 +9,54 @@ var guntypes = [
 	'SR West',
 ]
 
+var allguns = [
+	'Semi-74',
+	'AK-74N',
+	'AKS-74N',
+	'AK-74M',
+	'AK-105',
+	'AK-101',
+	'AK-102',
+	'AKMN',
+	'AKMSN',
+	'AK-103',
+	'AK-104',
+	'Vepr-136',
+	'Vepr-209',
+	'AKS-74U',
+	'PP-19',
+	'Saigs-9',
+	'Kedr',
+	'Klin',
+	'MR-133',
+	'Saiga-12',
+	'Mosin',
+	'SKS',
+	'SV-98',
+	'HK416 - Short Barrel',
+	'HK416 - Long Barrel',
+	'M4A1 - Short Barrel',
+	'M4A1 - Long Barrel',
+	'ADAR - Short Barrel',
+	'ADAR - Long Barrel',
+	'MP5',
+	'MP7',
+	'MPX',
+	'MP-153',
+	'M870',
+	'R700',
+	'DVL',
+	'M1A',
+	'M1A Socom - Short Barrel',
+	'M1A Socom - Long Barrel',
+	'M1A EBR - Short Barrel',
+	'M1A EBR - Long Barrel',
+	'M1A SASS - Short Barrel',
+	'M1A SASS - Long Barrel',
+	'RSASS - Short Barrel',
+	'RSASS - Long Barrel',
+]
+
 var eastarsmol = [
 	'Semi-74',
 	'AK-74N',
@@ -79,7 +127,7 @@ var silence = [
 var eastsmg = [
 	'AKS-74U',
 	'PP-19',
-	'Saigs-9',
+	'Saiga-9',
 	'Kedr',
 	'Klin',
 ]
@@ -255,7 +303,7 @@ var westsr = [
 	'DVL',
 	'M1A',
 	'M1A Socom - Short Barrel',
-	'M1A Socol - Long Barrel',
+	'M1A Socom - Long Barrel',
 	'M1A EBR - Short Barrel',
 	'M1A EBR - Long Barrel',
 	'M1A SASS - Short Barrel',
@@ -311,10 +359,15 @@ var sidearm = [
 	'Obrez',
 	'Makarov',	
 	'P226R',
-	'G17 (Stock Mags)',
+	'G17 - 17 Round Mags',
+	'G17 - 21 Round Mags',
+	'G17 - 33 Round Mags',
+	'G17 - 50 Round Mags',
+	'G18 - 17 Round Mags',
+	'G18 - 21 Round Mags',
+	'G18 - 33 Round Mags',
 	'TT',
 	'Grach',
-	'G18',
 	'APS Stock',
 	'APS No Stock',
 ]
@@ -353,18 +406,23 @@ var customquest = [
 	'Shoreline:   Drug Addiction Part 2 Electric Boogaloo. Your spiritual journey has begun, visit the general store to get some kale and vitamin water, notice a flyer for a spiritual awakening seminar for the church in the swamp and go there. Notice no one is there then decide to have a more calculated approach. Go to the Health Resort and visit the doctor in West 104 to complete the quest. If you find any drugs along the way, give in to temptation and slam them. Then go on a murderous rampage for the duration of the effects, slamming any other drugs you find along the way. Once they expire, realise you were never in control of your life, go to the top of the lighthouse tower to commit suicide while overlooking the water to complete the quest.',
 ]
 
+var defaultmags = [
+	'Default Mags',
+	'Default Mags',
+]
+
 function newRoll() {
 
-	var randomGun = Math.floor(Math.random() * (guntypes.length));
-	document.getElementById('gunDisplay').innerHTML = guns[randomGun];
-	var randomMag = Math.floor(Math.random() * (magnification.length));
-	document.getElementById('magDisplay').innerHTML = magnification[randomMag];
-	var randomOnex = Math.floor(Math.random() * (onexoptics.length));
-	document.getElementById('onexDisplay').innerHTML = onexoptics[randomOnex];
-	var randomOptics = Math.floor(Math.random() * (magoptics.length));
-	document.getElementById('magnifiedDisplay').innerHTML = magoptics[randomOptics];
-	var randomSuppress = Math.floor(Math.random() * (suppress.length));
-	document.getElementById('suppressDisplay').innerHTML = suppress[randomSuppress];
+	var randomGun = Math.floor(Math.random() * (allguns.length));
+	document.getElementById('gunDisplay').innerHTML = allguns[randomGun];
+	var randomMag = Math.floor(Math.random() * (defaultmags.length));
+	document.getElementById('magDisplay').innerHTML = defaultmags[randomMag];
+	var randomShot = Math.floor(Math.random() * (shotsammo.length));
+	document.getElementById('shotType').innerHTML = shotsammo[randomShot];
+	var randomOptic = Math.floor(Math.random() * (aroptic.length));
+	document.getElementById('opticDisplay').innerHTML = aroptic[randomOptic];
+	var randomSuppress = Math.floor(Math.random() * (silence.length));
+	document.getElementById('suppressDisplay').innerHTML = silence[randomSuppress];
 	var randomSidearm = Math.floor(Math.random() * (sidearm.length));
 	document.getElementById('sidearmDisplay').innerHTML = sidearm[randomSidearm];
 	var randomRaid = Math.floor(Math.random() * (raid.length));
@@ -374,12 +432,111 @@ function newRoll() {
 	var randomCustomqu = Math.floor(Math.random() * (customquest.length));
 	document.getElementById('customqDisplay').innerHTML = customquest[randomCustomqu];
 
-	if (document.getElementById('magDisplay').innerHTML === '1x') {
-		document.getElementById('onexDisplay').style.display = 'inline';
-		document.getElementById('magnifiedDisplay').style.display = 'none';
+	if ((document.getElementById('gunDisplay').innerHTML === 'Semi-74') || (document.getElementById('gunDisplay').innerHTML === 'AK-74N') || (document.getElementById('gunDisplay').innerHTML === 'AKS-74N') || (document.getElementById('gunDisplay').innerHTML === 'AK-74M') || (document.getElementById('gunDisplay').innerHTML === 'AK-105') || (document.getElementById('gunDisplay').innerHTML === 'AK-101') || (document.getElementById('gunDisplay').innerHTML === 'AK-102'))
+	{
+		var randomMag = Math.floor(Math.random() * (eastarsmolmags.length));
+		document.getElementById('magDisplay').innerHTML = eastarsmolmags[randomMag];
+	}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'AKMN') || (document.getElementById('gunDisplay').innerHTML === 'AKMSN') || (document.getElementById('gunDisplay').innerHTML === 'AK-103') || (document.getElementById('gunDisplay').innerHTML === 'AK-104') || (document.getElementById('gunDisplay').innerHTML === 'Vepr-136') || (document.getElementById('gunDisplay').innerHTML === 'Vepr-209'))
+		{
+			var randomMag = Math.floor(Math.random() * (eastarfatmags.length));
+			document.getElementById('magDisplay').innerHTML = eastarfatmags[randomMag];
+		}
+	else if (document.getElementById('gunDisplay').innerHTML === 'AKS-74U')
+		{
+			var randomMag = Math.floor(Math.random() * (aksmags.length));
+			document.getElementById('magDisplay').innerHTML = aksmags[randomMag];
+		}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'PP-19') || (document.getElementById('gunDisplay').innerHTML === 'Saiga-9'))
+		{
+			var randomMag = Math.floor(Math.random() * (ppsaigsmags.length));
+			document.getElementById('magDisplay').innerHTML = ppsaigsmags[randomMag];
+		}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'Kedr') || (document.getElementById('gunDisplay').innerHTML === 'Klin'))
+		{
+			var randomMag = Math.floor(Math.random() * (kedklinmags.length));
+			document.getElementById('magDisplay').innerHTML = kedklinmags[randomMag];
+		}
+	else if (document.getElementById('gunDisplay').innerHTML === 'MR-133')
+		{
+			var randomMag = Math.floor(Math.random() * (shottubemags.length));
+			document.getElementById('magDisplay').innerHTML = shottubemags[randomMag];
+		}
+	else if (document.getElementById('gunDisplay').innerHTML === 'Saiga-12')
+		{
+			var randomMag = Math.floor(Math.random() * (saigamags.length));
+			document.getElementById('magDisplay').innerHTML = saigamags[randomMag];
+		}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'HK416 - Short Barrel') || (document.getElementById('gunDisplay').innerHTML === 'HK416 - Long Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M4A1 - Short Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M4A1 - Long Barrel') || (document.getElementById('gunDisplay').innerHTML === 'ADAR - Long Barrel') || (document.getElementById('gunDisplay').innerHTML === 'ADAR - Short Barrel'))
+		{
+			var randomMag = Math.floor(Math.random() * (westarmags.length));
+			document.getElementById('magDisplay').innerHTML = westarmags[randomMag];
+		}
+	else if (document.getElementById('gunDisplay').innerHTML === 'MP5')
+		{
+			var randomMag = Math.floor(Math.random() * (mpfmags.length));
+			document.getElementById('magDisplay').innerHTML = mpfmags[randomMag];
+		}
+	else if (document.getElementById('gunDisplay').innerHTML === 'MP7')
+		{
+			var randomMag = Math.floor(Math.random() * (mpsmags.length));
+			document.getElementById('magDisplay').innerHTML = mpsmags[randomMag];
+		}
+	else if (document.getElementById('gunDisplay').innerHTML ==='MPX')
+		{
+			document.getElementById('magDisplay').innerHTML = defaultmags[randomMag];
+		}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'MP-153') || (document.getElementById('gunDisplay').innerHTML === 'M870'))
+		{
+			var randomMag = Math.floor(Math.random() * (shottubemags.length));
+			document.getElementById('magDisplay').innerHTML = shottubemags[randomMag];
+		}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'M1A') || (document.getElementById('gunDisplay').innerHTML === 'M1A Socom - Short Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M1A Socom - Long Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M1A EBR - Short Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M1A EBR - Long Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M1A SASS - Short Barrel') || (document.getElementById('gunDisplay').innerHTML === 'M1A SASS - Long Barrel'))
+		{
+			var randomMag = Math.floor(Math.random() * (monemags.length));
+			document.getElementById('magDisplay').innerHTML = monemags[randomMag];
+		}
+
+	if ((document.getElementById('gunDisplay').innerHTML === 'AKS-74U') || (document.getElementById('gunDisplay').innerHTML === 'PP-19') || (document.getElementById('gunDisplay').innerHTML === 'Saiga-9') || (document.getElementById('gunDisplay').innerHTML === 'MP5') || (document.getElementById('gunDisplay').innerHTML === 'MP7') || (document.getElementById('gunDisplay').innerHTML === 'MPX'))
+	{
+		var randomOptic = Math.floor(Math.random() * (smgoptic.length));
+		document.getElementById('opticDisplay').innerHTML = smgoptic[randomOptic];
+	}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'Kedr') || (document.getElementById('gunDisplay').innerHTML === 'Klin'))
+	{
+		var randomOptic = Math.floor(Math.random() * (kedklinoptic.length));
+		document.getElementById('opticDisplay').innerHTML = kedklinoptic[randomOptic];
+	}
+
+	if ((document.getElementById('gunDisplay').innerHTML === 'MR-133') || (document.getElementById('gunDisplay').innerHTML === 'Saiga-12') || (document.getElementById('gunDisplay').innerHTML === 'MP-153') || (document.getElementById('gunDisplay').innerHTML === 'M870'))
+	{
+		document.getElementById('shotType').style.display = 'inline';
 	} else {
-		document.getElementById('magnifiedDisplay').style.display = 'inline';
-		document.getElementById('onexDisplay').style.display = 'none';
+		document.getElementById('shotType').style.display = 'none';
+	}
+
+	if (document.getElementById('shotType').innerHTML === 'Slugs')
+	{
+		var randomOptic = Math.floor(Math.random() * (slugoptic.length));
+		document.getElementById('opticDisplay').innerHTML = slugoptic[randomOptic];
+	}
+	else if (document.getElementById('shotType').innerHTML === 'Buckshot')
+	{
+		var randomOptic = Math.floor(Math.random() * (buckshotoptic.length));
+		document.getElementById('opticDisplay').innerHTML = buckshotoptic[randomOptic];
+	}
+
+	if ((document.getElementById('gunDisplay').innerHTML === 'R700') || (document.getElementById('gunDisplay').innerHTML === 'DVL') || (document.getElementById('gunDisplay').innerHTML === 'SV-98'))
+	{
+		var randomOptic = Math.floor(Math.random() * (svoptic.length));
+		document.getElementById('opticDisplay').innerHTML = svoptic[randomOptic];
+		document.getElementById('magDisplay').innerHTML = defaultmags[randomMag];
+	}
+	else if ((document.getElementById('gunDisplay').innerHTML === 'Mosin') || (document.getElementById('gunDisplay').innerHTML === 'SKS'))
+	{
+		var randomOptic = Math.floor(Math.random() * (mosinskoptic.length));
+		document.getElementById('opticDisplay').innerHTML = mosinskoptic[randomOptic];
+		document.getElementById('magDisplay').innerHTML = defaultmags[randomMag];
 	}
 	
 	if (document.getElementById('raidDisplay').innerHTML ==='Custom Quest') {
@@ -388,7 +545,7 @@ function newRoll() {
 	} else {
 		document.getElementById('customqDisplay').style.display = 'none';
 		document.getElementById('raidqDisplay').style.display = 'inline';
-	}
+	}	
 	
 }
 
