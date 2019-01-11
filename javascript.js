@@ -402,6 +402,10 @@ var raidquests = [
 ]
 
 var customquest = [
+	'Interchange:   Water in Tarkov is less than clean, and your resulting tape worm is STARVING. Equip a Scav BP for Interchange and completely fill it with food. Run to your closed extract, consume ALL your collected food, then run to your open extract to burn those calories.',
+	'Factory:   You yearn for your days as a factory line worker. Fill a Trizip with as many disassembled weapons as possible, enter Factory and place create a line of weapon parts around the edge of Pit without dying.',
+	'Factory:   Tarkov nights can be dark and cold. Your mission is to fill a Trizip with Soap and/or Vaseline and enter Factory. You must find and befriend a Player, bring them to the showers, remove all clothing items and drop all Soap/Vaseline items in front of your new bunkmate.',
+	'Woods:   If you go down to the woods tonight...Wearing a mask of your choice, enter a Woods night raid and successfully melee kill a Player.',
 	'Interchange:   THE MOLE PEOPLE SHALL RISE AGAIN!!?! Make 2 complete laps around the mall basement. Kill every player, Scav, etc. that you find and then extract after you complete the second lap.',
 	'Labs:   It is time for your presentation, but you spent your weekends kissing boys and smoking dat heron. Steal 2 presentations (intel folders) from your colleagues and go to the presentation room. Once inside, shoot off an entire mag and then try to extract.',
 	'Woods:   It gets lonely in Tarkov. Your mission is to find a twink or BEAR to spend your glory days with. Find a life partner (hatchling, player scav, statue or Vaseline) and find 2 meals (1 food and 1 drink each). Bring them to the Scav House where you will have dinner together. You will then consummate your love to completet the quest (open to interpretation).',
