@@ -387,6 +387,8 @@ var raid = [
 	'Interchange',
 	'Labs',
 	'Custom Quest',
+	'Custom Quest',
+	'Custom Quest',
 ]
 
 var raidquests = [
