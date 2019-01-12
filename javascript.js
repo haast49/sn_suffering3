@@ -405,7 +405,7 @@ var raidquests = [
 ]
 
 var customquest = [
-	'Interchange:   Water in Tarkov is less than clean, and your resulting tape worm is STARVING. Equip a Scav BP for Interchange and completely fill it with food. Run to your closed extract, consume ALL your collected food, then run to your open extract to burn those calories.',
+	'Interchange:   Water in Tarkov is less than clean, and your resulting tape worm is STARVING. Equip a Scav BP for Interchange and completely fill it with food. Run to your closed extract, consume ALL your collected food, then run to your open extract to burn those calories and tire out Tapey the tape worm.',
         'Factory:   PITCH BLACK 3 - the studio was not able to afford Vin Diesel so it is up to you. In your second primary slot, equip a Short M870 with a minimum of 2 flashlights. NVGs are not allowed. Enter Night Factory, keep your M870 flashlights on at all times on your back and collect 15 Scav knives without being murdered by the night creatures.',
         'Factory:   Tarkov nights can be dark and cold. Your mission is to fill a Trizip with Soap and/or Vaseline and enter Factory. You must find and befriend a Player, bring them to the showers, remove all clothing items and drop all Soap/Vaseline items in front of your new bunkmate. While your new love is examining your gifts, MURDER THEM with a melee weapon so they can never betray you.',
         'Woods:   If you go down to the woods tonight...Wearing a mask of your choice, enter a Woods night raid and successfully melee kill 2 Players.',
