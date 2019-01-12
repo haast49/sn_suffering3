@@ -68,12 +68,12 @@ var eastarsmol = [
 ]
 
 var eastarsmolmags = [
-	'10 Round Polymer',
-	'30 Round Orange Bakelite',
+	'10 Round Polymer Mag',
+	'30 Round Orange Bakelite Mag',
 	'30 Round P-Mag',
-	'30 Round AK-12',
-	'45 Round Polymer',
-	'60 Round Polymer',
+	'30 Round AK-12 Mag',
+	'45 Round Polymer Mag',
+	'60 Round Polymer Mag',
 ]
 
 var aroptic = [
@@ -111,12 +111,12 @@ var eastarfat = [
 ]
 
 var eastarfatmags = [
-	'10 Round Steel',
-	'30 Round Steel',
-	'30 Round Palm',
+	'10 Round Steel Mag',
+	'30 Round Steel Mag',
+	'30 Round Palm Mag',
 	'30 Round P-Mag',
-	'40 Round Orange Bakelite',
-	'40 Round Steel',
+	'40 Round Orange Bakelite Mag',
+	'40 Round Steel Mag',
 ]
 
 var silence = [
@@ -133,24 +133,24 @@ var eastsmg = [
 ]
 
 var aksmags = [
-	'10 Round Polymer',
-	'30 Round Orange Bakelite',
+	'10 Round Polymer Mag',
+	'30 Round Orange Bakelite Mag',
 	'30 Round P-Mag',
-	'30 Round AK-12',
-	'45 Round Polymer',
-	'60 Round Polymer',
+	'30 Round AK-12 Mag',
+	'45 Round Polymer Mag',
+	'60 Round Polymer Mag',
 ]
 
 var ppsaigsmags = [
-	'10 Round Mags',
-	'20 Round Mags',
-	'30 Round Yellow Mags',
-	'30 Round Black Mags',
+	'10 Round Mag',
+	'20 Round Mag',
+	'30 Round Yellow Mag',
+	'30 Round Black Mag',
 ]
 
 var kedklinmags = [
-	'20 Round Mags',
-	'30 Round Mags',
+	'20 Round Mag',
+	'30 Round Mag',
 ]
 
 var kedklinoptic = [
@@ -197,8 +197,8 @@ var shottubemags = [
 ]
 
 var saigamags = [
-	'10 Round Mags',
-	'5 Round Mags',
+	'10 Round Mag',
+	'5 Round Mag',
 ]
 
 var slugoptic = [
@@ -270,8 +270,8 @@ var westar = [
 var westarmags = [
 	'10 Round P-Mag',
 	'20 Round P-Mag',
-	'30 Round STANAG',
-	'30 Round HK Steel',
+	'30 Round STANAG Mag',
+	'30 Round HK Steel Mag',
 	'30 Round P-Mag',
 	'40 Round P-Mag',
 ]
@@ -283,14 +283,14 @@ var westsmg = [
 ]
 
 var mpfmags = [
-	'30 Round Mags',
-	'50 Round Mags',
+	'30 Round Mag',
+	'50 Round Mag',
 ]
 
 var mpsmags = [
-	'20 Round Mags',
-	'30 Round Mags',
-	'40 Round Mags'
+	'20 Round Mag',
+	'30 Round Mag',
+	'40 Round Mag'
 ]
 
 var westshot = [
@@ -313,9 +313,9 @@ var westsr = [
 ]
 
 var monemags = [
-	'20 Round Mags',
-	'30 Round Mags',
-	'50 Round Mags',
+	'20 Round Mag',
+	'30 Round Mag',
+	'50 Round Mag',
 ]
 
 var magnification = [
@@ -359,13 +359,13 @@ var sidearm = [
 	'Obrez',
 	'Makarov',	
 	'P226R',
-	'G17 - 17 Round Mags',
-	'G17 - 21 Round Mags',
-	'G17 - 33 Round Mags',
-	'G17 - 50 Round Mags',
-	'G18 - 17 Round Mags',
-	'G18 - 21 Round Mags',
-	'G18 - 33 Round Mags',
+	'G17 - 17 Round Mag',
+	'G17 - 21 Round Mag',
+	'G17 - 33 Round Mag',
+	'G17 - 50 Round Mag',
+	'G18 - 17 Round Mag',
+	'G18 - 21 Round Mag',
+	'G18 - 33 Round Mag',
 	'TT',
 	'Grach',
 	'APS Stock',
